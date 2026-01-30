@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for Debit Note'
+define service ZSD_DEBIT_NOTE {
+  expose ZC_DEBIT_NOTE;
+}

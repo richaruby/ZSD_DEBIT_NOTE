@@ -1,0 +1,25 @@
+@Metadata.layer: #CORE
+@UI:{
+    headerInfo:{
+    typeName: 'Debit Note',
+    typeNamePlural: 'Debit Note' }
+    }
+annotate entity ZC_DEBIT_NOTE with
+{
+  @UI: { lineItem:[{ position: 10 }, { type: #FOR_ACTION , dataAction: 'ZPRINT', label: 'Generate Print'}],
+  identification: [{ position: 10 }],
+  selectionField: [{ position: 10 }] }
+  BUKRS;
+  @UI: { lineItem:[{ position: 20 }],
+  identification: [{ position: 20 }],
+  selectionField: [{ position: 20 }] }
+  GJAHR;
+  @UI: { lineItem:[{ position: 30 }],
+  identification: [{ position: 30 }],
+  selectionField: [{ position: 30 }] }
+  BELNR;
+//  @UI: { lineItem:[{ position: 40 }],
+//  identification: [{ position: 40 }],
+//  selectionField: [{ position: 40 }] }
+//  base64;
+}

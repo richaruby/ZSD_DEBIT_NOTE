@@ -1,0 +1,11 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_DEBIT_NOTE //alias <alias_name>
+{
+  use create;
+  use update;
+  use delete;
+
+  use action ZPRINT;
+}

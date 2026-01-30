@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Debit Note"
+  },
+  "ui5AppDetails": {
+    "appId": "zdebitnote"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_1E861DD4895BF457844B75884081599CE29E11AD_TM",
+    "semanticObject": "ZDEBIT_NOTE",
+    "action": "ZPREVIEW",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_1E861DD4895BF457844B75884081599CE29E11AD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Debit Note"
+      }
+    }
+  ]
+}

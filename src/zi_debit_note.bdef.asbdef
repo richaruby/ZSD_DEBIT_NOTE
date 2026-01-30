@@ -1,0 +1,23 @@
+managed implementation in class zbp_i_debit_note unique;
+strict ( 2 );
+
+define behavior for ZI_DEBIT_NOTE //alias <alias_name>
+//persistent table <???>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) BUKRS, GJAHR, BELNR;
+  action ( features : instance ) ZPRINT result [1] $self;
+     mapping for ztbs_debit_note
+     {
+       bukrs = bukrs;
+       gjahr = gjahr;
+       belnr = BELNR;
+       base64 = base64;
+       }
+}
